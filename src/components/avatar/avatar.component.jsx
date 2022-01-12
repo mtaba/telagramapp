@@ -1,6 +1,7 @@
+import './avatar.styles.scss';
 const Avatar = ({url})=>{
     return (
-      <img src="https://img.freepik.com/free-vector/mysterious-mafia-man-smoking-cigarette_52683-34828.jpg" alt="avatar" />
+      <img src="./avatar.jpg" alt="avatar" className="avatar" />
     )
 }
 

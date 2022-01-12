@@ -1,0 +1,26 @@
+$bg-color:#fff;
+ul.chatlist {
+    padding: 0 0.5rem;
+}
+.chatlist{
+    border-right:1px solid #ccc;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 100%;
+    background-color: $bg-color;
+}
+.chatlist-chat{
+    display: flex;
+    // height: 72px;
+    border-radius: 10px;
+    align-items: flex-start;
+    position: relative;
+    cursor: pointer;
+    padding: 0.5625rem;
+    overflow: hidden;
+    &:hover{
+        background-color: #f4f4f4;
+    }
+}
