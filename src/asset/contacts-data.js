@@ -19,42 +19,6 @@ const CONTACTS_DATA =  [
          },
          {
           "first_name": "",
-          "last_name": "",
-          "phone_number": "09132516745",
-          "date": "2020-09-13T19:15:05"
-         },
-         {
-          "first_name": "",
-          "last_name": "",
-          "phone_number": "00989031903544",
-          "date": "2019-07-12T18:20:52"
-         },
-         {
-          "first_name": "",
-          "last_name": "",
-          "phone_number": "03537330490",
-          "date": "2018-09-04T23:09:14"
-         },
-         {
-          "first_name": "",
-          "last_name": "",
-          "phone_number": "09131561778",
-          "date": "2017-10-11T10:31:29"
-         },
-         {
-          "first_name": "",
-          "last_name": "",
-          "phone_number": "09133530549",
-          "date": "2019-05-26T11:01:29"
-         },
-         {
-          "first_name": "",
-          "last_name": "",
-          "phone_number": "09122246477",
-          "date": "2019-04-22T20:30:14"
-         },
-         {
-          "first_name": "",
           "last_name": " دریاباز ",
           "phone_number": "00989374853610",
           "date": "2017-08-25T00:48:08"

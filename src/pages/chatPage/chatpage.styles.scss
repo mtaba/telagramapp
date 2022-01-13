@@ -1,0 +1,10 @@
+.chatpage{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .container{
+        width: 50%;
+        border:1px solid #ccc;
+        
+    }
+}

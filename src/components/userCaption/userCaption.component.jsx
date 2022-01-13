@@ -1,9 +1,11 @@
 import './userCaption.styles.scss';
 
-const UserCaption = ({messages, subtitle}) => {
+const UserCaption = ({title, subtitle}) => {
+      console.log(subtitle);
+      console.log("object");
   return <div className="user-caption">
-      <p className="title">{messages[0].from}</p>
-     { subtitle ? <p className="subtitle">{messages[0].text.substr(0, 20)}</p> : null
+      <p className="title">{title}</p>
+     { subtitle ? <p className="subtitle">{subtitle}</p> : null
 }
 
       </div>;

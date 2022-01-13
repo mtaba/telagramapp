@@ -15,7 +15,7 @@ function Chat({chat , setCurrentChat}){
   return  (
           <li  className="chatlist-chat" onClick={handleClick}>
           <Avatar />
-          <UserCaption  messages={chat.messages} />
+          <UserCaption  title={chat.messages[0].from} subtitle={chat.messages[0].text.substr(0,10)} />
           </li>
   ) 
 }

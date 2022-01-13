@@ -1,5 +1,6 @@
 const INITIAL_STATE= {
-    currentChat : null
+    currentChat : null,
+    messages: ''
 }
 
 const chatReducer = (state = INITIAL_STATE, action) => {
@@ -9,6 +10,11 @@ const chatReducer = (state = INITIAL_STATE, action) => {
                 ...state,
                 currentChat: action.payload
             }
+        case 'ADD_MESSAGE':
+                return {
+                    ...state,
+                   messages: action.payload
+                }    
         default:
             return state;
     }
