@@ -1,6 +1,6 @@
-const getContacts =  contacts =>({
-  type : 'GET_CONTACTS',
-  payload: contacts,
+const setCurrentContact =  contact =>({
+  type : 'SET_CURRENT_CONTACT',
+  payload: contact,
 })
 
-export default getContacts;
+export default setCurrentContact;

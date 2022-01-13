@@ -5,5 +5,5 @@ import contactReducer from './contact/contact.reducer';
 
 export default combineReducers({
     chat: chatReducer,
-     contact : contactReducer
+     contact : contactReducer,
 })

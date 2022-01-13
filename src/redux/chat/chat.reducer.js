@@ -1,6 +1,7 @@
+import CHAT_DATA from "../../asset/chats-data";
 const INITIAL_STATE= {
     currentChat : null,
-    messages: ''
+    chats: CHAT_DATA
 }
 
 const chatReducer = (state = INITIAL_STATE, action) => {
@@ -10,11 +11,7 @@ const chatReducer = (state = INITIAL_STATE, action) => {
                 ...state,
                 currentChat: action.payload
             }
-        case 'ADD_MESSAGE':
-                return {
-                    ...state,
-                   messages: action.payload
-                }    
+            
         default:
             return state;
     }

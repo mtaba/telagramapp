@@ -5,6 +5,11 @@ const INITIAL_STATE= {
 
 const contactReducer = (state = INITIAL_STATE, action) => {
     switch(action.type){
+        case 'SET_CURRENT_CONTACT':
+            return {
+                ...state,
+                currentContact: action.payload
+            }
         default: return state ;   
     }
 }

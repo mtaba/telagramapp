@@ -1,8 +1,6 @@
 import { useState } from "react";
 import { connect } from "react-redux";
-
-import Avatar from "../../components/avatar/avatar.component";
-import UserCaption from "../../components/userCaption/userCaption.component";
+import Contact from "../../components/contact/contact.component";
 
 import "./contactPage.styles.scss";
 
@@ -10,11 +8,10 @@ function ContactPage({ contacts }) {
   return (
     <div className="contact-page">
       <ul>
-        {contacts.map((contact) => (
-          <div className="contact">
-            <Avatar />
-            <UserCaption title={contact.first_name + " " + contact.last_name} />
-          </div>
+        {contacts.map((contact,index) => (
+          // <div className="contact">
+            <Contact key={index} contact={contact} />
+          // </div>
         ))}
       </ul>
     </div>

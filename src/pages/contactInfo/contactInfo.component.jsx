@@ -1,11 +1,19 @@
-
-const ContactInfo=({contact})=>{
+import {connect} from 'react-redux';
+const ContactInfo=({currentContact})=>{
+  const {first_name, last_name, phone_number,date} = currentContact; 
   return(
       <div>
-      <p className="">{contact.first_name}</p>
-      <p className="">{contact.last_name}</p>
+        <p>First Name : {first_name} </p>
+        <p>Last Name : {last_name} </p>
+        <p>Phone Number : {phone_number} </p>
+        <p>date : {date} </p>
       </div>
   )
 }
 
-export default ContactInfo;
+
+const mapStateToProps = ({ contact }) => ({
+  currentContact: contact.currentContact
+});
+
+export default connect( mapStateToProps)(ContactInfo);
