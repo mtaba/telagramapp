@@ -228,7 +228,7 @@ const CHAT_DATA =     [
             "id": 699,
             "type": "message",
             "date": "2016-07-12T10:46:38",
-            "from": "Hamid",
+            "from": "Hamid Mazree",
             "from_id": "user53152987",
             "text": "Hi"
            },
@@ -236,7 +236,7 @@ const CHAT_DATA =     [
             "id": 700,
             "type": "message",
             "date": "2016-07-12T10:46:40",
-            "from": "حمید مزرعه",
+            "from": "Hamid Mazree",
             "from_id": "user53152987",
             "text": "خوبی؟"
            },
@@ -244,7 +244,7 @@ const CHAT_DATA =     [
             "id": 701,
             "type": "message",
             "date": "2016-07-12T10:48:28",
-            "from": "Hamid",
+            "from": "Hamid Mazree",
             "from_id": "user53152987",
             "text": "آقای رضوی"
            }

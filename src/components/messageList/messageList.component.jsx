@@ -1,10 +1,23 @@
+import {connect} from 'react-redux';
 import "./messageList.styles.scss"
 
-const MessageList = ()=>{
+const MessageList = ({currentChat})=>{
+    const {messages} = currentChat;
  return(
      <div className="message-list-container">
-     <div className="message">This is a test message</div>
+          {
+             messages.map(message=> (
+                <div key={message.id} className="message">
+                    {message.text}
+                </div>
+             ))
+         }
      </div>
  )
 }
-export default MessageList;
+
+const mapStateToProps = ({ chat }) => ({
+    currentChat: chat.currentChat
+  });
+  
+export default connect( mapStateToProps)(MessageList);

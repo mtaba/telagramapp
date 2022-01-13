@@ -1,12 +1,13 @@
+import {connect} from 'react-redux';
 import "./header.styles.scss";
 import Avatar from "../avatar/avatar.component";
-import {connect} from 'react-redux';
+import UserCaption from '../userCaption/userCaption.component';
 
-//params :  current user
-const Header = (props) => {
-  console.log('props in header',props);
+//params :  currentChat
+const Header = ({currentChat}) => {
   return <div className="header">
     <Avatar />
+    <UserCaption messages={currentChat.messages} />
   </div>;
 };
 
