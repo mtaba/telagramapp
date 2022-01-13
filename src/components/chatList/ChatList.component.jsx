@@ -1,17 +1,19 @@
-
-
+import { connect } from 'react-redux';
 import Chat from '../chat/chat.component'
-import CHAT_DATA from "../../asset/chats-data";
 import './ChatList.styles.scss';
 
-const ChatList=()=> {
-  
+const ChatList=({chats})=> {
+  console.log("chat List",chats);
   return (
     <ul className="chatlist">
-      {CHAT_DATA.map((chat) => (
+      {chats.map((chat) => (
           <Chat key={chat.id} chat={chat} subtitle={chat.messages[0].text} />
       ))}
     </ul>
   );
 };
-export default ChatList;
+const mapStateToProps = ({ chat }) => ({
+  chats: chat,
+});
+
+export default connect(mapStateToProps)(ChatList);

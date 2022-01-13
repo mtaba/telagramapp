@@ -13,7 +13,7 @@ const chatReducer = (state = INITIAL_STATE, action) => {
             }
             
         default:
-            return state;
+            return state.chats;
     }
 }
 
