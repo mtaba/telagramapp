@@ -13,7 +13,7 @@ const ChatList=({chats})=> {
   );
 };
 const mapStateToProps = ({ chat }) => ({
-  chats: chat,
+  chats: chat.chats,
 });
 
 export default connect(mapStateToProps)(ChatList);

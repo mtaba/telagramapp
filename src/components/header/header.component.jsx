@@ -1,18 +1,17 @@
-import {connect} from 'react-redux';
-import "./header.styles.scss";
-import Avatar from "../avatar/avatar.component";
-import UserCaption from '../userCaption/userCaption.component';
+import React from 'react';
+import { Link } from 'react-router-dom';
 
-//params :  currentChat
-const Header = ({currentChat}) => {
-  return <div className="header">
-    <Avatar />
-    <UserCaption title={currentChat.messages[0].from} />
-  </div>;
-};
+import './header.styles.scss'
+const Header = () => {
+    return (
+        <div className="header">
+            <Link to="/" className="item">
+               Chat List
+            </Link>
+             <Link to="/contact" className="item">Contacts</Link>
 
-const mapStateToProps = ({ chat }) => ({
-  currentChat: chat.currentChat
-});
+        </div>
+    )
+}
 
-export default connect( mapStateToProps)(Header);
+export default Header;

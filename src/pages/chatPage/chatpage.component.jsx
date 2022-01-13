@@ -1,4 +1,4 @@
-import Header from '../../components/header/header.component';
+import Header from '../../components/chatHeader/chatHeader.component';
 import MessageList from "../../components/messageList/messageList.component";
 
 import './chatpage.styles.scss';
