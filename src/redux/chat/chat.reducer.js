@@ -1,5 +1,5 @@
 const INITIAL_STATE= {
-    curerntChat : null
+    currentChat : null
 }
 
 const chatReducer = (state = INITIAL_STATE, action) => {
@@ -7,7 +7,7 @@ const chatReducer = (state = INITIAL_STATE, action) => {
         case 'SET_CURRENT_CHAT':
             return {
                 ...state,
-                curerntChat: action.payload
+                currentChat: action.payload
             }
         default:
             return state;

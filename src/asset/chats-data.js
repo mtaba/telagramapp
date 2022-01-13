@@ -266,7 +266,7 @@ const CHAT_DATA =     [
           ]
         },
         {
-          "name": "Dan",
+          "name": "Andrew",
           "type": "personal_chat",
           "id": 53152988,
           "messages": [
@@ -281,7 +281,7 @@ const CHAT_DATA =     [
           ]
         },
         {
-          "name": "Dan",
+          "name": "Brian",
           "type": "personal_chat",
           "id": 53152981,
           "messages": [
@@ -296,7 +296,7 @@ const CHAT_DATA =     [
           ]
           },
            {
-            "name": "Dan",
+            "name": "Luna",
             "type": "personal_chat",
             "id": 53152983,
             "messages": [
@@ -311,7 +311,7 @@ const CHAT_DATA =     [
             ]
           },
              {
-              "name": "Dan",
+              "name": "Rick",
               "type": "personal_chat",
               "id": 53152982,
               "messages": [
