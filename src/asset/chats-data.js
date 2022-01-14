@@ -15,6 +15,15 @@ const CHAT_DATA =     [
             "from_id": "user53152987",
             "text": "Hello from Dan"
            },
+          //  {
+          //   "id": 9999,
+          //   "type": "message",
+          //   "date": "2016-07-12T10:46:38",
+          //   "from": "Mostaf Tabatabaeipur",
+          //   "from_id": "user13640028",
+          //   "reply_to_message_id": 699,
+          //   "text": "Hello Dan, Im happy to chat with you!"
+          //  }
           ]
         },
         {

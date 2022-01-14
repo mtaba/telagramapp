@@ -1,6 +1,5 @@
  const addMessageToChat = (chats,newChatObj) => {
    
-  console.log("newChatObj in uitls", newChatObj);
      const existingchat = chats.find(
        chat => chat.id === newChatObj.chatId
      );

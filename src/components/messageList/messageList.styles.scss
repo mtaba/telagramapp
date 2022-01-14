@@ -8,19 +8,39 @@
         min-height: 300px;
         display: flex;
         flex-direction: column;
+        .buble-container{
+            display:flex;
+            .bubble-content{
+                min-width: 56px;
+                max-width: 100%;
+                width:80%;
+                background-color: $primary-background-color;
+                border-radius: 25px;
+                margin-bottom: 10px;
+                padding:10px;
 
-        .bubble-content{
-            min-width: 56px;
-            max-width: 100%;
-            width:auto;
-            background-color: $primary-background-color;
-            border-radius: 25px;
-            margin-bottom: 10px;
-            padding:10px;
-
-    
+                .is-reply{
+                    border-left:2px solid #4fae4e;
+                    height:30px
+                }
+            }
+            .replyLink{
+                font-size:12px;
+                top: 11px;
+                position: relative;
+                margin-left: 5px;
+                padding:5px;
+                &:hover{
+                    cursor: pointer;
+                }
+            }
+            
+            .is-out{
+                background-color: $message-out-background-color;
+            }
         }
     }
+
     .chat-input-form{
         display: flex;
         width: 80%;
