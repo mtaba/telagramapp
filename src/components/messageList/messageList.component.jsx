@@ -12,11 +12,10 @@ function getRandom(min, max) {
 function MessageList(props) {
   const { currentChat, addMessage } = props;
   const { messages } = currentChat;
-
+  console.log("messages:",messages);
   const inputRef = useRef(null);
 
   const [newMessage, setNewMessage] = useState("");
-  const [showReply, setShowReply] = useState(false);
   const [isReply, setIsReply] = useState(false);
   const [reply_to_message_id , setReply_To_Message_Id ] = useState(null);
 
@@ -32,7 +31,7 @@ function MessageList(props) {
         date: Date.now(),
         from: "Mostafa Tabatabaeipur",
         from_id: "user13640028",
-        reply_to_message_id: reply_to_message_id,
+        reply_to_message_id: parseInt(reply_to_message_id),
         text: newMessage,
       }
       
@@ -65,9 +64,13 @@ function MessageList(props) {
     inputRef.current.focus();
   }
 
-  function findParent(repply_to_Id){
-   let parentMessage=  messages.filter(message => message.id ==repply_to_Id);
-  return parentMessage[0].text
+  function findParent(reply_id){
+    console.log("reply id",reply_id);
+   let parentMessage=  messages.filter(message => message.id == reply_id);
+   console.log("parent:", parentMessage);
+   if(reply_id !== null)
+      return parentMessage[0].text; 
+  else return '';
   }
 
   return (
@@ -81,8 +84,8 @@ function MessageList(props) {
                 message.from_id === "user13640028" ? "is-out" : ""
               }`}
             >
-              {message.reply_to_message_id && 
-              <div className="is-reply">{findParent(reply_to_message_id)}</div>
+              {message['reply_to_message_id'] !== undefined  && message['reply_to_message_id'] != null &&
+              <div className="is-reply">{findParent(message['reply_to_message_id'])}</div>
             }
               <div className="message">{message.text}</div>
             </div>
