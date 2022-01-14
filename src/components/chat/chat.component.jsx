@@ -8,6 +8,7 @@ import './chat.styles.scss';
 
 function Chat({chat , setCurrentChat}){
     const history = useHistory();
+    let latMessageIndex =chat.messages.length-1
     function handleClick(){
         setCurrentChat(chat);
         history.push("/chat");
@@ -15,7 +16,7 @@ function Chat({chat , setCurrentChat}){
   return  (
           <li  className="chatlist-chat" onClick={handleClick}>
           <Avatar imageUrl={chat.picture} />
-          <UserCaption  title={chat.messages[0].from} subtitle={chat.messages[0].text.substr(0,10)} />
+          <UserCaption  title={chat.messages[0].from} subtitle={chat.messages[latMessageIndex].text.substr(0,20)} />
           </li>
   ) 
 }
