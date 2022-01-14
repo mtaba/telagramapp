@@ -1,20 +1,38 @@
 import React , {useState} from 'react'
 import {connect} from 'react-redux';
 // import PostMessageForm from '../../components/postMessageForm/postMessageForm.component';
-import  addMessage from '../../redux/chat/chat.actions';
+import  {addMessage} from '../../redux/chat/chat.actions';
 import "./messageList.styles.scss"
 
 function MessageList(props){
-    console.log("props ni message List:", props);
-    const {currentChat} = props;
+     
+    const {currentChat, addMessage} = props;
+    console.log("currentChat",currentChat);
     const {messages} = currentChat;
 
     const [newMessage, setNewMessage] = useState('');
 
     function handleSubmit(e){
         e.preventDefault();
-        console.log(newMessage);
-        addMessage(newMessage);
+     
+        let newMessageObject = {
+            id: '',
+            type : 'message',
+            date : Date.now(),
+            from: 'Mostafa Tabatabaeipur',
+            from_id: 'user13640028',
+            text: newMessage
+        };
+       let newChatObj = {
+            chatId: currentChat.id,
+            message: newMessageObject
+        }
+      
+
+        console.log(currentChat);
+        console.log(newChatObj);
+        addMessage(newChatObj);
+        setNewMessage('');
         
     }
  return(
@@ -44,7 +62,7 @@ const mapStateToProps = ({ chat }) => ({
   });
 
 const mapDispatchToProps = dispatch =>({
-    addMessage: newMessage => dispatch(addMessage(newMessage))
+    addMessage: newChatObj => dispatch(addMessage(newChatObj))
     })
 
 export default connect(
