@@ -1,8 +1,52 @@
-.message-list-container{
-    padding:1rem;
-    .bubble-content{
-        min-width: 56px;
-        max-width: 100%;
+@import "../../sharedStyles/_variables";
 
+.chat-input-container{
+    background-color: #80a57c;
+    padding: 16px;
+    .message-list-container{
+        padding:1rem;
+        min-height: 300px;
+        display: flex;
+        flex-direction: column;
+
+        .bubble-content{
+            min-width: 56px;
+            max-width: 100%;
+            width:auto;
+            background-color: $primary-background-color;
+            border-radius: 25px;
+            margin-bottom: 10px;
+            padding:10px;
+
+    
+        }
     }
+    .chat-input-form{
+        display: flex;
+        width: 80%;
+        .message-input {
+            background-color: $primary-background-color;
+            border-radius: $input-border-radious;
+            padding: 0 5px;
+            border: 1px solid #ccc;
+            outline: none;
+            font-size: 16px;
+            font-size: $messages-text-size;
+            line-height: 18px;
+            height:$input-height;
+            width: 60%;
+        }
+        .messages-btn {
+            border-radius: $input-border-radious;
+           width: 80px;
+           height:$input-height;
+           padding:10px;
+           margin-left:10px;
+        }
+    }
+   
 }
+
+
+ 
+ 
