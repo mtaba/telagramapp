@@ -1,7 +1,7 @@
 import './avatar.styles.scss';
-const Avatar = ({url})=>{
+const Avatar = ({imageUrl})=>{
     return (
-      <img src="./avatar.jpg" alt="avatar" className="avatar" />
+      <img src={imageUrl? imageUrl : "./avatar/avatar.jpg"} alt="avatar" className="avatar" />
     )
 }
 

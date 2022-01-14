@@ -3,73 +3,44 @@ const CONTACTS_DATA =  [
           "first_name": "Dan",
           "last_name": "Ibramov",
           "phone_number": "03537272844",
-          "date": "2016-10-18T14:07:57"
+          "date": "2016-10-18T14:07:57",
+          "picture" : "/avatar/dan-a.jpg",
          },
          {
-          "first_name": "Jim",
-          "last_name": "Jackson",
+          "first_name": "Andrew",
+          "last_name": "Clark",
           "phone_number": "03537246089",
-          "date": "2018-07-18T18:42:45"
+          "date": "2018-07-18T18:42:45",
+          "picture" : "/avatar/andrew.jpg",
          },
          {
-          "first_name": "Ali",
-          "last_name": "Rezari",
+          "first_name": "Brian",
+          "last_name": "Vaughn",
           "phone_number": "09102402000",
-          "date": "2017-03-24T00:09:03"
+          "date": "2017-03-24T00:09:03",
+          "picture" : "/avatar/brain.jpg",
          },
          {
-          "first_name": "",
-          "last_name": " دریاباز ",
+          "first_name": "Luna",
+          "last_name": "Ruan",
           "phone_number": "00989374853610",
-          "date": "2017-08-25T00:48:08"
+          "date": "2017-08-25T00:48:08",
+          "picture" : "/avatar/lunaruan.jpg",
          },
          {
-          "first_name": "",
-          "last_name": "احمدیانی",
+          "first_name": "Rick",
+          "last_name": "Hanlon",
           "phone_number": "09100726343",
-          "date": "2021-03-17T11:51:13"
+          "date": "2021-03-17T11:51:13",
+          "picture" : "/avatar/rick.jpg",
+
          },
          {
-          "first_name": "",
-          "last_name": "اندر خورا",
+          "first_name": "Hamid",
+          "last_name": "Mazree",
           "phone_number": "09001250942",
-          "date": "2020-12-23T09:27:23"
-         },
-         {
-          "first_name": "",
-          "last_name": "ایمان پور ",
-          "phone_number": "09003130659",
-          "date": "2018-01-05T17:13:11"
-         },
-         {
-          "first_name": "",
-          "last_name": "بی طرف بنگاهی",
-          "phone_number": "09131548222",
-          "date": "2019-07-07T09:24:25"
-         },
-         {
-          "first_name": "",
-          "last_name": "بیابانکی",
-          "phone_number": "09133592743",
-          "date": "2016-08-03T23:31:35"
-         },
-         {
-          "first_name": "",
-          "last_name": "جعفری پور",
-          "phone_number": "09132561187",
-          "date": "2016-08-03T23:31:35"
-         },
-         {
-          "first_name": "",
-          "last_name": "جلایی ",
-          "phone_number": "09198885285",
-          "date": "2016-10-27T09:11:24"
-         },
-         {
-          "first_name": "",
-          "last_name": "جمالداری",
-          "phone_number": "09103593038",
-          "date": "2018-12-03T17:18:33"
+          "date": "2020-12-23T09:27:23",
+          "picture" : "",
          }
          ] ;
 export default CONTACTS_DATA;         

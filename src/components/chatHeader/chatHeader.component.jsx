@@ -5,9 +5,10 @@ import UserCaption from '../userCaption/userCaption.component';
 
 //params :  currentChat
 const ChatHeader = ({currentChat}) => {
+  const {picture, messages} = currentChat
   return <div className="chat-header">
-    <Avatar />
-    <UserCaption title={currentChat.messages[0].from} />
+    <Avatar imageUrl={picture} />
+    <UserCaption title={messages[0].from} />
   </div>;
 };
 
